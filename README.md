@@ -1,10 +1,6 @@
-## This repo is looking for maintainers! Please reach out if interested.
+[![GitHub CI](https://github.com/msi2706/node-open-mining-portal/actions/workflows/node.js.yml/badge.svg)](https://github.com/msi2706/node-open-mining-portal/actions/workflows/node.js.yml)
 
---------
-
-
-# NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")
-#### Node Open Mining Portal
+# Node Open Mining Portal <img src="./website/static/logo.svg" alt="NOMP Logo" height="35px"/>
 
 This portal is an extremely efficient, highly scalable, all-in-one, easy to setup cryptocurrency mining pool written
 entirely in Node.js. It contains a stratum poolserver; reward/payment/share processor; and a (*not yet completed*)
@@ -46,13 +42,13 @@ Usage of this software requires abilities with sysadmin, database admin, coin da
 
 ### Features
 
-* For the pool server it uses the highly efficient [node-stratum-pool](//github.com/zone117x/node-stratum-pool) module which
-supports vardiff, POW & POS, transaction messages, anti-DDoS, IP banning, [several hashing algorithms](//github.com/zone117x/node-stratum-pool#hashing-algorithms-supported).
+* For the pool server it uses the highly efficient [node-stratum-pool](//github.com/msi2706/node-stratum-pool) module which
+supports vardiff, POW & POS, transaction messages, anti-DDoS, IP banning, [several hashing algorithms](//github.com/msi2706/node-stratum-pool#hashing-algorithms-supported).
 
 * The portal has an [MPOS](//github.com/MPOS/php-mpos) compatibility mode so that the it can
 function as a drop-in-replacement for [python-stratum-mining](//github.com/Crypto-Expert/stratum-mining). This
 mode can be enabled in the configuration and will insert shares into a MySQL database in the format which MPOS expects.
-For a direct tutorial see the wiki page [Setting up NOMP for MPOS usage](//github.com/zone117x/node-open-mining-portal/wiki/Setting-up-NOMP-for-MPOS-usage).
+For a direct tutorial see the wiki page [Setting up NOMP for MPOS usage](//github.com/msi2706/node-open-mining-portal/wiki/Setting-up-NOMP-for-MPOS-usage).
 
 * Multi-pool ability - this software was built from the ground up to run with multiple coins simultaneously (which can
 have different properties and hashing algorithms). It can be used to create a pool for a single coin or for multiple
@@ -361,7 +357,7 @@ Here is an example of the required fields:
 ````
 
 For additional documentation how to configure coins and their different algorithms
-see [these instructions](//github.com/zone117x/node-stratum-pool#module-usage).
+see [these instructions](//github.com/msi2706/node-stratum-pool#module-usage).
 
 
 ##### Pool config
@@ -490,7 +486,7 @@ Description of options:
 You can create as many of these pool config files as you want (such as one pool per coin you which to operate).
 If you are creating multiple pools, ensure that they have unique stratum ports.
 
-For more information on these configuration options see the [pool module documentation](https://github.com/zone117x/node-stratum-pool#module-usage)
+For more information on these configuration options see the [pool module documentation](https://github.com/msi2706/node-stratum-pool#module-usage)
 
 
 
