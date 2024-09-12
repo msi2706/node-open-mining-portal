@@ -50,7 +50,7 @@
         "extend": "*"
     },
     "engines": {
-        "node": ">=0.14"
+        "node": ">=14"
     },
     "scripts": {
         "start": "node init.js",
